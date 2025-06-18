@@ -1,0 +1,26 @@
+<div class="one_block">
+  <div id="{{ block_id }}" class="oldtooltip">
+    <h5>{{ post.title }}</h5>
+    <span>{{ post.description | safe }}</span>
+  </div>
+  <div class="today {% if post.type == 'Alert' %}urgent{% endif %}">
+    <a
+      href="{{ post.link }}"
+      onmouseover="showTooltip('{{ block_id }}')"
+      onmouseout="hideTooltip('{{ block_id }}')"
+    >{{ post.title }}</a>
+  </div>
+  <p>
+    {{ post.scope }} - {{ post.type }}
+    (<time datetime="{{ post.datetime }}">{{ post.datetime }}</time>)
+  </p>
+  <div class="one_block_img">
+    <a
+      class="fancybox image"
+      data-fancybox="gallery"
+      href="{{ post.image }}"
+    >
+      <img src="{{ post.image }}" alt="{{ post.title }}"/>
+    </a>
+  </div>
+</div>

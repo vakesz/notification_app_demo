@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company News & Updates</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+  />
+  <style>
+    /* … your existing styles … */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>
+    function showTooltip(id) {
+      document.getElementById(id).classList.add("visible");
+    }
+    function hideTooltip(id) {
+      document.getElementById(id).classList.remove("visible");
+    }
+  </script>
+</head>
+<body>
+  <!-- wrap everything in a container so we can prepend new posts -->
+  <div id="posts-container">
+    <!-- … your three hard-coded blocks here … -->
+    <!-- e.g.:
+      <div class="one_block">…</div>
+      <hr/>
+      <div class="one_block">…</div>
+      <hr/>
+      <div class="one_block">…</div>
+      <hr/>
+    -->
+  </div>
+
+  <script>
+    // poll every interval_ms milliseconds
+    const interval = {{ interval_ms }};
+    setInterval(async () => {
+      const resp = await fetch("/new_posts");
+      const data = await resp.json();
+      data.posts.forEach(html => {
+        // prepend new post + hr
+        $("#posts-container")
+          .prepend(html)
+          .prepend("<hr/>");
+      });
+    }, interval);
+  </script>
+</body>
+</html>

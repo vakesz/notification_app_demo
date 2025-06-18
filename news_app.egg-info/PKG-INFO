@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: news_app
+Version: 0.1.0
+Summary: A Flask app serving dynamic company news & updates with scheduled posts.
+Author-email: Gabor Pinkova <gabor.pinkova@sigmatechnology.com>
+Project-URL: Homepage, https://github.com/sigmatechnology/news_app
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask>=2.0
+Requires-Dist: Jinja2>=3.0

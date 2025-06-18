@@ -1,0 +1,20 @@
+[
+  {
+    "title": "System Maintenance Alert: Scheduled Downtime",
+    "description": "Our systems will undergo scheduled maintenance on 2025-06-20 from 22:00 to 23:00 UTC. Services may be intermittently unavailable. <a href='#'>More details</a>",
+    "link": "/alerts/system-maintenance",
+    "scope": "Global - IT Department",
+    "type": "Alert",
+    "datetime": "2025-06-20T22:00:00",
+    "image": "https://source.unsplash.com/800x600/?maintenance"
+  },
+  {
+    "title": "New Office Ergonomics Guidelines",
+    "description": "Please review the updated ergonomics recommendations to keep your workspace comfortable and healthy. <a href='#'>Read guidelines</a>",
+    "link": "/news/ergonomics-guidelines",
+    "scope": "Local - Budapest Office - HR Department",
+    "type": "News",
+    "datetime": "2025-06-22T10:00:00",
+    "image": "https://source.unsplash.com/800x600/?office,health"
+  }
+]
