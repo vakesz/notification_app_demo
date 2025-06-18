@@ -1,8 +1,0 @@
-pyproject.toml
-app/app.py
-news_app.egg-info/PKG-INFO
-news_app.egg-info/SOURCES.txt
-news_app.egg-info/dependency_links.txt
-news_app.egg-info/entry_points.txt
-news_app.egg-info/requires.txt
-news_app.egg-info/top_level.txt

@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-app/app.py
-notifications_app_demo.egg-info/PKG-INFO
-notifications_app_demo.egg-info/SOURCES.txt
-notifications_app_demo.egg-info/dependency_links.txt
-notifications_app_demo.egg-info/entry_points.txt
-notifications_app_demo.egg-info/requires.txt
-notifications_app_demo.egg-info/top_level.txt
